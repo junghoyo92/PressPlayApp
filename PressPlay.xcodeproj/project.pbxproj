@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		738B2EC01C66868200B9332F /* pp.png in Resources */ = {isa = PBXBuildFile; fileRef = 738B2EBF1C66868200B9332F /* pp.png */; };
+		738B2EC31C66878A00B9332F /* nicki.png in Resources */ = {isa = PBXBuildFile; fileRef = 738B2EC11C66878A00B9332F /* nicki.png */; };
+		738B2EC41C66878A00B9332F /* Drake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 738B2EC21C66878A00B9332F /* Drake.jpg */; };
+		73D8FFF41C69542500E5F594 /* Dreams Last.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D8FFEF1C69542500E5F594 /* Dreams Last.mp3 */; };
+		73D8FFF51C69542500E5F594 /* Next To You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D8FFF01C69542500E5F594 /* Next To You.mp3 */; };
+		73D8FFF61C69542500E5F594 /* No Pressure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D8FFF11C69542500E5F594 /* No Pressure.mp3 */; };
+		73D8FFF71C69542500E5F594 /* New Days.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D8FFF21C69542500E5F594 /* New Days.mp3 */; };
+		73D8FFF81C69542500E5F594 /* Find Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73D8FFF31C69542500E5F594 /* Find Me.mp3 */; };
+		73DBE1D61C6AF17300A8DA60 /* Believe in Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73DBE1D51C6AF17300A8DA60 /* Believe in Me.mp3 */; };
 		73DCC6321C5FD51600C810AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCC6311C5FD51600C810AA /* AppDelegate.swift */; };
 		73DCC6341C5FD51600C810AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCC6331C5FD51600C810AA /* ViewController.swift */; };
 		73DCC6371C5FD51600C810AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DCC6351C5FD51600C810AA /* Main.storyboard */; };
@@ -15,6 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		738B2EBF1C66868200B9332F /* pp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pp.png; path = ../../../pp.png; sourceTree = "<group>"; };
+		738B2EC11C66878A00B9332F /* nicki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nicki.png; path = ../../../nicki.png; sourceTree = "<group>"; };
+		738B2EC21C66878A00B9332F /* Drake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Drake.jpg; path = ../../../Drake.jpg; sourceTree = "<group>"; };
+		73D8FFEF1C69542500E5F594 /* Dreams Last.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dreams Last.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Hoy/Unknown Album/Dreams Last.mp3"; sourceTree = "<group>"; };
+		73D8FFF01C69542500E5F594 /* Next To You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Next To You.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Jee Juh Productions/Unknown Album/Next To You.mp3"; sourceTree = "<group>"; };
+		73D8FFF11C69542500E5F594 /* No Pressure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "No Pressure.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/No Pressure.mp3"; sourceTree = "<group>"; };
+		73D8FFF21C69542500E5F594 /* New Days.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "New Days.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/New Days.mp3"; sourceTree = "<group>"; };
+		73D8FFF31C69542500E5F594 /* Find Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Find Me.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Find Me.mp3"; sourceTree = "<group>"; };
+		73DBE1D51C6AF17300A8DA60 /* Believe in Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Believe in Me.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Rap Instrumentals and Hip Hop/Unknown Album/Believe in Me.mp3"; sourceTree = "<group>"; };
 		73DCC62E1C5FD51600C810AA /* PressPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PressPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DCC6311C5FD51600C810AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DCC6331C5FD51600C810AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +77,15 @@
 				73DCC6351C5FD51600C810AA /* Main.storyboard */,
 				73DCC6381C5FD51600C810AA /* Assets.xcassets */,
 				73DCC63A1C5FD51600C810AA /* LaunchScreen.storyboard */,
+				73D8FFEF1C69542500E5F594 /* Dreams Last.mp3 */,
+				73D8FFF01C69542500E5F594 /* Next To You.mp3 */,
+				73D8FFF11C69542500E5F594 /* No Pressure.mp3 */,
+				73D8FFF21C69542500E5F594 /* New Days.mp3 */,
+				73D8FFF31C69542500E5F594 /* Find Me.mp3 */,
+				73DBE1D51C6AF17300A8DA60 /* Believe in Me.mp3 */,
+				738B2EBF1C66868200B9332F /* pp.png */,
+				738B2EC11C66878A00B9332F /* nicki.png */,
+				738B2EC21C66878A00B9332F /* Drake.jpg */,
 				73DCC63D1C5FD51600C810AA /* Info.plist */,
 			);
 			path = PressPlay;
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					73DCC62D1C5FD51600C810AA = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 32DXF22EH3;
 					};
 				};
 			};
@@ -122,9 +150,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D8FFF41C69542500E5F594 /* Dreams Last.mp3 in Resources */,
+				73DBE1D61C6AF17300A8DA60 /* Believe in Me.mp3 in Resources */,
+				73D8FFF71C69542500E5F594 /* New Days.mp3 in Resources */,
+				73D8FFF61C69542500E5F594 /* No Pressure.mp3 in Resources */,
+				738B2EC31C66878A00B9332F /* nicki.png in Resources */,
 				73DCC63C1C5FD51600C810AA /* LaunchScreen.storyboard in Resources */,
+				738B2EC01C66868200B9332F /* pp.png in Resources */,
+				73D8FFF51C69542500E5F594 /* Next To You.mp3 in Resources */,
 				73DCC6391C5FD51600C810AA /* Assets.xcassets in Resources */,
 				73DCC6371C5FD51600C810AA /* Main.storyboard in Resources */,
+				738B2EC41C66878A00B9332F /* Drake.jpg in Resources */,
+				73D8FFF81C69542500E5F594 /* Find Me.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PressPlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JungBusiness.PressPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PressPlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JungBusiness.PressPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +327,7 @@
 				73DCC6421C5FD51600C810AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

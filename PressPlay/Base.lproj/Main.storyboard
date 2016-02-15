@@ -1,25 +1,483 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="Da4-S9-92q">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="PP8-UW-Ed5" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNA-mm-Oew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823.5" y="386.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bss-rB-6uM">
+            <objects>
+                <viewController id="jem-8N-NBJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B0v-Dx-Edw"/>
+                        <viewControllerLayoutGuide type="bottom" id="CTE-ou-ovp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="taS-T6-R0w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ney-Mb-hrZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="About Us" id="wfo-ks-o2f">
+                                        <barButtonItem key="leftBarButtonItem" title="Return" id="OI6-y9-IWf">
+                                            <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="fV4-Yh-R6m"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Contact" id="R05-14-w04">
+                                            <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2oV-lu-a44">
+                                <rect key="frame" x="20" y="197" width="335" height="176"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="811-NH-HI0"/>
+                                </constraints>
+                                <string key="text">            We here at PressPlay are looking for some raw and potential talent. PressPlay allows one to showcase what they got to producers and record labels to become the next BIG HIT! Instructions are simple: Check out and download the tracks, create your version of the song, then send it back to us!</string>
+                                <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="LEE-ou-oXp">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lzx-MD-Pwm"/>
+                                    <barButtonItem systemItem="play" id="ymb-zv-a6H">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="7ET-hE-45m"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="28v-Ni-i2s"/>
+                                    <barButtonItem systemItem="action" id="aNB-re-7S0">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <segue destination="wiD-1c-hkO" kind="show" id="FN2-RC-EBa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NXw-ra-aS3"/>
+                                    <barButtonItem systemItem="organize" id="Vfc-0S-a5v">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9SQ-of-9To"/>
+                                </items>
+                                <color key="barTintColor" red="0.03529411927" green="0.0078431377190000002" blue="0.0078431377190000002" alpha="1" colorSpace="deviceRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What We're About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ome-Df-j2g">
+                                <rect key="frame" x="58" y="143" width="258" height="46"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LEE-ou-oXp" firstAttribute="leading" secondItem="taS-T6-R0w" secondAttribute="leadingMargin" constant="-20" id="1S2-Hx-xVM"/>
+                            <constraint firstItem="Ome-Df-j2g" firstAttribute="top" secondItem="ney-Mb-hrZ" secondAttribute="bottom" constant="79" id="Eir-gO-1L2"/>
+                            <constraint firstItem="2oV-lu-a44" firstAttribute="top" secondItem="Ome-Df-j2g" secondAttribute="bottom" constant="8" id="HxW-tD-zeR"/>
+                            <constraint firstItem="2oV-lu-a44" firstAttribute="leading" secondItem="taS-T6-R0w" secondAttribute="leadingMargin" id="Tct-2V-uDk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ome-Df-j2g" secondAttribute="trailing" constant="39" id="Y1Y-ca-y1c"/>
+                            <constraint firstItem="ney-Mb-hrZ" firstAttribute="leading" secondItem="taS-T6-R0w" secondAttribute="leadingMargin" constant="-20" id="aov-dC-oGi"/>
+                            <constraint firstItem="ney-Mb-hrZ" firstAttribute="top" secondItem="B0v-Dx-Edw" secondAttribute="bottom" id="bOl-CZ-r96"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ney-Mb-hrZ" secondAttribute="trailing" constant="-20" id="fLs-Nd-Yha"/>
+                            <constraint firstItem="Ome-Df-j2g" firstAttribute="leading" secondItem="taS-T6-R0w" secondAttribute="leadingMargin" constant="38" id="gFY-5r-OhF"/>
+                            <constraint firstItem="2oV-lu-a44" firstAttribute="centerX" secondItem="taS-T6-R0w" secondAttribute="centerX" id="j6F-Ek-VMJ"/>
+                            <constraint firstItem="2oV-lu-a44" firstAttribute="trailing" secondItem="taS-T6-R0w" secondAttribute="trailingMargin" id="moX-S5-5Ka"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LEE-ou-oXp" secondAttribute="trailing" constant="-20" id="nAB-ds-qyc"/>
+                            <constraint firstItem="CTE-ou-ovp" firstAttribute="top" secondItem="LEE-ou-oXp" secondAttribute="bottom" id="pVG-QW-bq6"/>
+                            <constraint firstItem="Ome-Df-j2g" firstAttribute="centerX" secondItem="taS-T6-R0w" secondAttribute="centerX" id="wIh-hI-UAq"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPt-dh-Ypj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-313.5" y="386.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PressPlay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="uzg-ba-Jtd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="PressPlay" id="jaf-Uu-17J">
+                                        <barButtonItem key="leftBarButtonItem" title="About Us" id="4Rf-rl-G7a">
+                                            <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                            <connections>
+                                                <segue destination="jem-8N-NBJ" kind="show" id="e8C-IG-HyZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Sign In/Up" id="Zd4-HA-6v9">
+                                            <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                            <connections>
+                                                <segue destination="vTL-hT-Sp2" kind="show" id="7bw-lt-lv8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Check out the tracks and download your favorite by swiping left on the track.           Then drop a verse and send it back. " translatesAutoresizingMaskIntoConstraints="NO" id="VWt-2c-5tw">
+                                <rect key="frame" x="20" y="91" width="335" height="73"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="HUb-CX-VJw"/>
+                                </constraints>
+                                <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m9U-hR-ZBL">
+                                <rect key="frame" x="20" y="172" width="335" height="325"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="m9U-hR-ZBL" secondAttribute="height" multiplier="67:65" id="1rc-Sh-R1j"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Track" id="YkP-gG-IHE">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YkP-gG-IHE" id="UCb-yP-wck">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ZNi-wc-Pwz"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uKs-W1-qlt"/>
+                                </connections>
+                            </tableView>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1yM-l0-xjx">
+                                <rect key="frame" x="18" y="505" width="339" height="31"/>
+                                <connections>
+                                    <action selector="musicScrub:" destination="BYZ-38-t0r" eventType="valueChanged" id="Y6g-rk-xoB"/>
+                                </connections>
+                            </slider>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="SRu-se-1BZ">
+                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="56G-vH-OSD"/>
+                                    <barButtonItem systemItem="compose" id="y35-R5-FE7">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vRv-BB-TQ2"/>
+                                    <barButtonItem systemItem="add" id="qzt-Xb-xvC">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Llo-eX-wvi"/>
+                                    <barButtonItem style="plain" id="5vC-WJ-g2q">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Pvx-HT-o14">
+                                            <rect key="frame" x="244" y="7" width="117" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </slider>
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <action selector="adjustVolume:" destination="BYZ-38-t0r" id="EK1-vN-JRj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="q6X-3g-Wha">
+                                <rect key="frame" x="0.0" y="535" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Bv9-Eo-Zl6"/>
+                                    <barButtonItem systemItem="refresh" id="igW-zG-hNQ">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ssm-8O-DPe"/>
+                                    <barButtonItem systemItem="play" id="pQ4-uM-581">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="wDh-si-0KI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="tau-0j-816"/>
+                                    <barButtonItem systemItem="pause" id="Ty9-PV-AWx">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="xJH-g7-DBi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="w2U-XX-zbx"/>
+                                </items>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="Uel-tK-M4V">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="srb-NB-lmX"/>
+                                    <barButtonItem systemItem="action" id="TMf-1H-w4S">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <segue destination="wiD-1c-hkO" kind="show" id="dre-Os-pz6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PSg-WD-lbt"/>
+                                    <barButtonItem systemItem="play" id="TwR-ls-y9u">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="RLb-yn-huI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="uq1-QN-R3Y"/>
+                                    <barButtonItem systemItem="organize" id="nXT-uN-YSF">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ogu-fh-4Mg"/>
+                                </items>
+                                <color key="barTintColor" red="0.035294119268655777" green="0.0078431377187371254" blue="0.0078431377187371254" alpha="1" colorSpace="deviceRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SRu-se-1BZ" firstAttribute="top" secondItem="q6X-3g-Wha" secondAttribute="bottom" id="0t8-5V-N4L"/>
+                            <constraint firstItem="VWt-2c-5tw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6dX-Wf-SPV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uel-tK-M4V" secondAttribute="trailing" constant="-20" id="8jf-6m-slI"/>
+                            <constraint firstItem="1yM-l0-xjx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FGJ-P0-ile"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uzg-ba-Jtd" secondAttribute="trailing" constant="-20" id="IaF-3W-JVi"/>
+                            <constraint firstItem="SRu-se-1BZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="IoU-ue-ut4"/>
+                            <constraint firstItem="Uel-tK-M4V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="KF9-E0-obl"/>
+                            <constraint firstItem="Uel-tK-M4V" firstAttribute="top" secondItem="SRu-se-1BZ" secondAttribute="bottom" id="L4y-if-xwx"/>
+                            <constraint firstItem="1yM-l0-xjx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TaH-9B-GCL"/>
+                            <constraint firstItem="m9U-hR-ZBL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vf6-qb-glX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SRu-se-1BZ" secondAttribute="trailing" constant="-20" id="Zrn-Sc-w6M"/>
+                            <constraint firstItem="m9U-hR-ZBL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="edN-ob-RjZ"/>
+                            <constraint firstItem="VWt-2c-5tw" firstAttribute="top" secondItem="uzg-ba-Jtd" secondAttribute="bottom" constant="27" id="etH-E5-Abx"/>
+                            <constraint firstItem="q6X-3g-Wha" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="hEm-sP-IWD"/>
+                            <constraint firstItem="uzg-ba-Jtd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hze-8D-AUd"/>
+                            <constraint firstItem="VWt-2c-5tw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="l5b-FQ-ceo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uel-tK-M4V" secondAttribute="bottom" id="lsv-p3-aI4"/>
+                            <constraint firstItem="q6X-3g-Wha" firstAttribute="top" secondItem="1yM-l0-xjx" secondAttribute="bottom" id="oxM-Vx-vnE"/>
+                            <constraint firstItem="m9U-hR-ZBL" firstAttribute="top" secondItem="VWt-2c-5tw" secondAttribute="bottom" constant="8" id="pld-af-3kA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q6X-3g-Wha" secondAttribute="trailing" constant="-20" id="rva-mQ-mkm"/>
+                            <constraint firstItem="uzg-ba-Jtd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="sRQ-91-owQ"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="musicSlider" destination="1yM-l0-xjx" id="qbm-gX-t9E"/>
+                        <outlet property="trackList" destination="m9U-hR-ZBL" id="4LB-bf-jAS"/>
+                        <outlet property="volumeSlider" destination="Pvx-HT-o14" id="11S-Jv-AgK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="178.5" y="386.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1wB-TU-lrl">
+            <objects>
+                <viewController id="wiD-1c-hkO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vbM-CJ-yEd"/>
+                        <viewControllerLayoutGuide type="bottom" id="JfS-gq-5uQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PdX-fS-tYD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ens-R6-BrM">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4j9-J4-UaT"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Upload" id="qDO-Rh-rFV">
+                                        <barButtonItem key="leftBarButtonItem" title="Return" id="F9m-mS-dC6">
+                                            <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="AhE-e9-Vw0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="oT0-cy-aD7">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WhW-mv-64I"/>
+                                    <barButtonItem systemItem="play" id="bdF-9Y-rFl">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="GvB-9Q-dtr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0ff-QE-zEN"/>
+                                    <barButtonItem systemItem="action" id="idP-Ni-4xK">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EaD-ti-zj3"/>
+                                    <barButtonItem systemItem="organize" id="JbB-mV-xhF">
+                                        <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JYs-3g-Mwa"/>
+                                </items>
+                                <color key="barTintColor" red="0.03529411927" green="0.0078431377190000002" blue="0.0078431377190000002" alpha="1" colorSpace="deviceRGB"/>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="14k-Av-xnb">
+                                <rect key="frame" x="20" y="98" width="335" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">          Click the button below and select the song that you would like to submit. You will get ___ submit per ___ and you will be directly emailed by parties with interest. </string>
+                                <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ens-R6-BrM" firstAttribute="centerX" secondItem="PdX-fS-tYD" secondAttribute="centerX" id="EE5-xV-3L8"/>
+                            <constraint firstItem="ens-R6-BrM" firstAttribute="top" secondItem="vbM-CJ-yEd" secondAttribute="bottom" constant="8" id="MYb-G4-J0Q"/>
+                            <constraint firstItem="ens-R6-BrM" firstAttribute="leading" secondItem="PdX-fS-tYD" secondAttribute="leadingMargin" constant="-20" id="SgN-dX-BHy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ens-R6-BrM" secondAttribute="trailing" constant="-20" id="lTj-1N-nUZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zk4-VJ-5lL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178.5" y="1205.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L9O-ov-UDK">
+            <objects>
+                <viewController id="vTL-hT-Sp2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PDN-om-c9W"/>
+                        <viewControllerLayoutGuide type="bottom" id="gyB-SG-vK6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jsu-Db-qrc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRg-Cx-zhE">
+                                <rect key="frame" x="136" y="136" width="102" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="oSk-Z5-z3T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkY-Qn-Erb">
+                                <rect key="frame" x="134" y="232" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="IE3-vI-GAL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xe5-hh-GuO">
+                                <rect key="frame" x="107" y="261" width="161" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G27-Ur-i2e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="h2A-D2-fhl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cgj-1O-8XN"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <color key="textColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sign In/Up" id="6f2-j7-hfk">
+                                        <barButtonItem key="leftBarButtonItem" title="Return" id="iK6-pr-C5q">
+                                            <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="8Ys-yp-rRg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Up" id="Ihl-rG-ygg">
+                                            <color key="tintColor" red="0.96078437569999997" green="0.87058830259999997" blue="0.29803922770000002" alpha="1" colorSpace="deviceRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vm2-Gk-JUo">
+                                <rect key="frame" x="107" y="165" width="161" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1QL-pQ-uh5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vm2-Gk-JUo" firstAttribute="leading" secondItem="Jsu-Db-qrc" secondAttribute="leadingMargin" constant="87" id="3MX-Ms-UjI"/>
+                            <constraint firstItem="h2A-D2-fhl" firstAttribute="top" secondItem="PDN-om-c9W" secondAttribute="bottom" id="67i-e4-QIJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xe5-hh-GuO" secondAttribute="trailing" constant="87" id="9U5-dt-AFK"/>
+                            <constraint firstItem="h2A-D2-fhl" firstAttribute="leading" secondItem="Jsu-Db-qrc" secondAttribute="leadingMargin" constant="-20" id="ABl-Vj-bKO"/>
+                            <constraint firstItem="Xe5-hh-GuO" firstAttribute="leading" secondItem="Jsu-Db-qrc" secondAttribute="leadingMargin" constant="87" id="ClU-fg-TCP"/>
+                            <constraint firstItem="zkY-Qn-Erb" firstAttribute="top" secondItem="Vm2-Gk-JUo" secondAttribute="bottom" constant="37" id="GBq-8x-P6k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h2A-D2-fhl" secondAttribute="trailing" constant="-20" id="Gy7-mf-JlO"/>
+                            <constraint firstItem="Xe5-hh-GuO" firstAttribute="top" secondItem="zkY-Qn-Erb" secondAttribute="bottom" constant="8" id="NBj-QT-k4f"/>
+                            <constraint firstItem="PRg-Cx-zhE" firstAttribute="leading" secondItem="Jsu-Db-qrc" secondAttribute="leadingMargin" constant="116" id="Nu3-E1-KUS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PRg-Cx-zhE" secondAttribute="trailing" constant="117" id="Oh7-uc-Loa"/>
+                            <constraint firstItem="Vm2-Gk-JUo" firstAttribute="top" secondItem="PRg-Cx-zhE" secondAttribute="bottom" constant="8" id="X4Q-4I-BFv"/>
+                            <constraint firstItem="PRg-Cx-zhE" firstAttribute="top" secondItem="h2A-D2-fhl" secondAttribute="bottom" constant="72" id="YHN-ef-8tb"/>
+                            <constraint firstItem="zkY-Qn-Erb" firstAttribute="leading" secondItem="Jsu-Db-qrc" secondAttribute="leadingMargin" constant="114" id="cPN-yU-Ji2"/>
+                            <constraint firstItem="zkY-Qn-Erb" firstAttribute="centerX" secondItem="PRg-Cx-zhE" secondAttribute="centerX" id="fQd-Fv-lTR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vm2-Gk-JUo" secondAttribute="trailing" constant="87" id="hxS-4B-pZG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zkY-Qn-Erb" secondAttribute="trailing" constant="114" id="kgB-LB-XxK"/>
+                            <constraint firstItem="Xe5-hh-GuO" firstAttribute="centerX" secondItem="PRg-Cx-zhE" secondAttribute="centerX" id="vSd-eG-aka"/>
+                            <constraint firstItem="h2A-D2-fhl" firstAttribute="centerX" secondItem="Jsu-Db-qrc" secondAttribute="centerX" id="vkt-RL-p99"/>
+                            <constraint firstItem="Vm2-Gk-JUo" firstAttribute="centerX" secondItem="PRg-Cx-zhE" secondAttribute="centerX" id="wXA-bd-GZR"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jc-hc-KQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642.5" y="386.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dre-Os-pz6"/>
+        <segue reference="8Ys-yp-rRg"/>
+    </inferredMetricsTieBreakers>
 </document>
